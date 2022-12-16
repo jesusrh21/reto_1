@@ -8,16 +8,14 @@ def is_anagrama(palabra:str,texto:str)->bool:
     
     Return:
      - anagrama : bool
-    """
-    anagrama = False
+    """    
     if len(palabra) != len(texto):
-        return anagrama
+        return False
     else:
         for index, letra in enumerate(palabra):
             if texto.find(letra) == index:
-                return anagrama
-        anagrama = True
-        return anagrama
+                return False
+        return True
 
 
 if __name__ == '__main__':
