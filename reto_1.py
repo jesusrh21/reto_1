@@ -20,21 +20,7 @@ def is_anagrama(palabra:str,texto:str)->bool:
         return anagrama
 
 
-
-def run()->None:
-    """
-    Metodo para ejecutar el scrip
-
-    Atributos:
-     - None
-
-    Return:
-     - None
-    """
-    palabra_1 = input("Inserte la primera palabra: ")
-    palabra_2 = input("Inserte la segunda palabra: ")
-    print(is_anagrama(palabra = palabra_1, texto = palabra_2))
-
-
 if __name__ == '__main__':
-    run()
+    palabra_1 = input("Inserte la primera palabra: ").lowe()
+    palabra_2 = input("Inserte la segunda palabra: ").lower()
+    print(is_anagrama(palabra = palabra_1, texto = palabra_2))
